@@ -54,6 +54,7 @@ public class AlertBox {
             window.setMinWidth(250);
 
         Label label = new Label();
+        label.setStyle("-fx-text-fill: #E8E8E8");
             label.setText(RandomPassword);
 
 
@@ -62,6 +63,7 @@ public class AlertBox {
             layout.setAlignment(Pos.CENTER);
 
         Scene scene = new Scene(layout);
+        scene.getStylesheets().add("Theme.css");
             window.setScene(scene);
             window.showAndWait();
 

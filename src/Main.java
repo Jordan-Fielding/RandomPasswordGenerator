@@ -24,7 +24,9 @@ public class Main extends Application {
 
         //First Scene - Label Button1 and Button Action(Generate Random Password)
         Label labelalert = new Label("Generate Random Password");
+        labelalert.setStyle("-fx-text-fill: #E8E8E8");
         Button buttonalert = new Button("Generate");
+
 
         buttonalert.setOnAction(e -> {
             try {
@@ -37,7 +39,9 @@ public class Main extends Application {
         //Scene 1 VBox
         VBox layout1 = new VBox(20);
         layout1.getChildren().addAll(labelalert, buttonalert);
+
         scene1 = new Scene(layout1, 500, 500);
+        scene1.getStylesheets().add("Theme.css");
         layout1.setAlignment(Pos.CENTER);
 
         //Set Stage
