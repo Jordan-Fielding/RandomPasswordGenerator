@@ -1,0 +1,30 @@
+//        Glow glow = new Glow();
+//        glow.setLevel(0.9);
+
+//        DropShadow dropshadow = new DropShadow();
+//        dropshadow.setBlurType(BlurType.ONE_PASS_BOX);
+//        dropshadow.setColor(Color.BLACK);
+//        dropshadow.setHeight(1);
+//        dropshadow.setWidth(1);
+//        dropshadow.setRadius(5);
+//        dropshadow.setOffsetX(9);
+//        dropshadow.setOffsetY(12);
+//        dropshadow.setSpread(3);
+
+//        Light.Spot light = new Light.Spot();
+//        light.setColor(Color.GRAY);
+//        light.setX(70);
+//        light.setY(40);
+//        light.setZ(45);
+//
+//        Lighting lighting = new Lighting();
+//        lighting.setLight(light);
+
+        //Instantiating the MotionBlur class
+        MotionBlur motionBlur = new MotionBlur();
+
+        //Setting the radius to the effect
+        motionBlur.setRadius(7);
+
+        //Setting angle to the effect
+        motionBlur.setAngle(45);
