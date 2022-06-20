@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.net.*;
+import java.io.*;
+
 
 
 public class AlertBox {
@@ -21,7 +24,8 @@ public class AlertBox {
         String title = "Password Generator";
 
 //        Random Word Generator
-        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Jordan.F\\Documents\\JavaProjects\\Random Password Generator\\src\\Dictionary.txt"));
+        URL url = new URL("https://raw.githubusercontent.com/Jordan-Fielding/RandomPasswordGenerator/7bb9b0b5a83c3e63e314dc06caded1f42a47d91f/src/Dictionary.txt?token=GHSAT0AAAAAABVY4H5U73MV5TR64NM4WIRGYVP2ZVA");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
         List<String> lines = new ArrayList<String>();
 
         String line = reader.readLine();
