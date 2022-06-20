@@ -1,11 +1,11 @@
 .root{
     -fx-background-color: linear-gradient(#181818, #00DED1);
-    -fx-font-size: 21px;
-
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
 }
 .button {
     -fx-background-color:#F8F8F8;
     -fx-text-fill: #181818;
     -fx-background-radius: 24;
-
 }
+
