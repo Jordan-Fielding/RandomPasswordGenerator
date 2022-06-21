@@ -50,20 +50,6 @@ public class Main extends Application {
         //Playing the animation
         rotateTransition.play();
 
-        //Run SFC IN PROGRESS
-        Button buttonsfc = new Button("SFC Scannow");
-
-        buttonsfc.setOnAction(e -> {
-                    File dir = new File("/src");
-                    try {
-                        Process process = Runtime.getRuntime().exec("sfc.bat", null, dir);
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                });
-
-
-
 
 
 
@@ -87,7 +73,7 @@ public class Main extends Application {
 
         //Scene 1 VBox
         VBox layout1 = new VBox(20);
-        layout1.getChildren().addAll(labelalert, buttonalert, buttonstart, buttonsfc);
+        layout1.getChildren().addAll(labelalert, buttonalert, buttonstart);
 
         scene1 = new Scene(layout1, 500, 500);
         scene1.getStylesheets().add("Theme.css");
